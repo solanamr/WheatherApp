@@ -1,0 +1,15 @@
+.container{
+    background-image: url('../../styles/imgs/kenrick-mills-N8j_Lkd-L3g-unsplash.jpg');
+    height: 150vh;
+    background-size: cover;
+    margin-top: 0vw;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 2vw;
+
+}

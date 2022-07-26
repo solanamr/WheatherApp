@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { closeCard } from "../../redux/actions/index";
+import style from './card.module.css';
 
 export default function Card({ data }) {
   const dispatch = useDispatch();
@@ -11,15 +12,15 @@ export default function Card({ data }) {
   }
 
   return (
-    <div>
-      <button value={data.location.tz_id} onClick={(e) => handleClose(e)}>X</button>
-      <div>
-        <h1>{data.location.name}</h1>
-        <h4>Temperatura: {data.current.temp_c}°C</h4>
-        <h4>Viento: {data.current.wind_kph} km/h</h4>
-      </div>
-      <div>
-        <img src={data.icono} alt="" />
+    <div className={style.container}> {/*padre */}
+      <div className={style.box}> {/*contenedor de todo */}
+        <div className={style.data}>{/*contenedor de la informacion */}
+          <button value={data.location.tz_id} onClick={(e) => handleClose(e)} className={style.btn}>X</button>
+          <h1>{data.location.name}</h1>
+          <h4>Temperatura: {data.current.temp_c}°C</h4>
+          <h4>Viento: {data.current.wind_kph} km/h</h4>
+          <img src={data.icono} alt="" className={style.img} />
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import { useSelector } from "react-redux";
 import SearchBar from "../SearchBar/SearchBar";
 import Card from "../Card/Card";
+import style from './home.module.css';
 
 
 export default function Home() {
@@ -19,9 +20,9 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className={style.container}>
       <SearchBar/>
-      <div>
+      <div className={style.card}>
         {array.length > 0 &&
           array.map((el) => (
             <div key={el.location.name}>

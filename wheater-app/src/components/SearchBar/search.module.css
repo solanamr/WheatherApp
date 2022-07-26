@@ -1,0 +1,95 @@
+.contenedor{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.h3{
+    margin-top: 0vw;
+    padding: 2vw;
+}
+
+
+.input {
+    color: #000000;
+    border: 2px solid #d0cace;
+    margin-top: 1vw;
+    border-radius: 10px;
+    padding: 0.4vw 3.5vw;
+    background: transparent;
+    max-width: 190px;
+   }
+   
+   .input:active {
+    box-shadow: 2px 2px 15px #a3a0a2 inset;
+    
+   }
+
+
+.btnBuscar{
+background-color: #d5d4d4;
+ width: 4.5em;
+ height: 2em;
+ border-radius: 5px;
+ font-weight: 600;
+ border: none;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+ margin: 1vw;
+ cursor: pointer;
+}
+
+.btnBuscar::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 5px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, #98f0ee 0%, #f77e63 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+.btnBuscar:hover::before {
+ width: 9em;
+}
+
+   
+
+
+.btnVolver{
+    background-color: #d5d4d4;
+    width: 4.5em;
+    height: 2em;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    margin: 1vw;
+    cursor: pointer;
+   }
+   
+   .btnVolver::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #f77e63 0%, #98f0ee 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .btnVolver:hover::before {
+    width: 9em;
+   }

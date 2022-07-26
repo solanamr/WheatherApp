@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { callApi } from "../../redux/actions/index";
-import swal from "sweetalert";
+import style from './search.module.css';
 
 
 export default function SearchBar() {
@@ -42,14 +42,11 @@ export default function SearchBar() {
   }
 
   return (
-    <div>
-      <h3>Puedes buscar hasta 6 ciudades</h3>
+    <div className={style.contenedor}>
+      <h2 className={style.h3}>Podes buscar hasta 6 ciudades</h2>
       <div>
-        <input onChange={(e) => handleInput(e)} value={input} type="search" placeholder="Ciudad"></input>
-        <button onClick={(e) => handleSubmit(e)}type="submit">Buscar</button>
-      <Link to="/">
-        <button>Volver</button>
-      </Link>
+        <input className={style.input} onChange={(e) => handleInput(e)} value={input} type="search" placeholder="Ciudad"></input>
+        <button onClick={(e) => handleSubmit(e)}type="submit" className={style.btnBuscar}>Buscar</button>
       </div>
       <h1>Ciudades</h1>
       <dialog open={aux}>
@@ -62,6 +59,9 @@ export default function SearchBar() {
         </div>
       </dialog>
 
+      <Link to="/">
+        <button className={style.btnVolver}>Volver</button>
+      </Link>
     </div>
   );
 }

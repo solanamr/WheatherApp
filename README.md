@@ -12,5 +12,5 @@ Espero te guste.
 Nos vemos!
 
 ![landing](https://user-images.githubusercontent.com/87136807/181391267-8a7e55b8-1788-4fe3-8dfa-3ce674a907c5.jpg)
-</br>
+</ br>
 ![home](https://user-images.githubusercontent.com/87136807/181391281-008dae19-2d3a-43e8-9f9b-39a1a9d4b47a.jpg)

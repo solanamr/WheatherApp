@@ -1,7 +1,7 @@
 # WeatherApp
 
 Hola, bienvenidos a mi Weather App. Una single page application creada como una de las homeworks del bootcamp Henry.
-Cuenta con una landing desde donde podes acceder al home, donde se renderizan las ciudades o países de las que quieras saber el clima.
+Cuenta con una landing desde donde podes acceder al home, donde podés buscar las ciudades o países de las que quieras saber el clima.
 Las tecnologías utilizadas son:
 - React.
 - Redux.

@@ -7,7 +7,7 @@ Las tecnologías utilizadas son:
 - Redux.
 - Css puro.
 
-Si queres verla, lo primero que debes hacer es hacer un npm install en la carpeta src y luego hacer npm start para levantar el proyecto.
+Si queres verla, lo primero que debes hacer es hacer un `npm install` en la carpeta src y luego hacer `npm start` para levantar el proyecto.
 Espero te guste.
 Nos vemos!
 
